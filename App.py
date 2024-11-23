@@ -1,14 +1,7 @@
-# App.py
-from flask import Flask, jsonify
+from flask import Flask, jsonify  
 
+app = Flask(__name__)  
 
-app = Flask(__name__)
-
-
-@app.route('')
-def home():
-    return jsonify(message="Hello level 400 FET, Quality Assurance!")
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route('/')  
+def hello():  
+    return jsonify(message="Hello, I am a level 400 student, this is software quality tools")
